@@ -1,0 +1,23 @@
+Fox Potions eCommerce App | User Stories
+
+**GUEST**
+As a GUEST, I would like to browse a list/selection of products (each product in the list should include an IMAGE, NAME, PRICE, and STAR RATINGS)
+As a GUEST, I would like to browse a carousel of top rated products 
+As a GUEST, I would like to be able to search for a product using a keyword
+As a GUEST, I would like to click on a product and be redirected to a page where I can see more details about the product (IMAGE, NAME, PRICE, STAR RATINGS, DESCRIPTION and REVIEWS). 
+    -It should also include a form that allows me to POST a review of the product. If I'm not signed in as a user, I should see a message with a link to sign in. -It should also include an "Add to Cart" option with the PRICE, STATUS (count-in-stock or out-of-stock), QUANTITY, and ADD TO CART button. 
+
+As a GUEST, If I add a product to the cart, I should be redirected to my shopping cart page with the SUBTOTAL ITEMS, SUBTOTAL PRICE and a PROCEED TO CHECKOUT button. 
+    -The shopping cart should also show the item(s) IMAGE, NAME, PRICE, QUANTITY, and have an option to DELETE a product from the cart
+
+As a GUEST, if I click PROCEED TO CHECKOUT in my shopping cart, I should be redirected to a login page to sign in or register as a user
+
+**USER**
+As a USER, I would like access to my own private account where I can view my profile and change account details (such as updating a password) as well as view my purchased orders
+As a USER, I would like to proceed to checkout steps to place my order (includes Shipping Screen, Payment Method screen, Order Review/Payment screen, and Order Success/Paid screen)
+As a USER, I would like to be able to add a review for a product
+
+**ADMIN**
+As an ADMIN, I would like to be able to change users account information (excluding the users password) and have the ability to delete a user
+As an ADMIN, I would like to be able to add my own products to the website and have the ability to edit or delete them (NAME, PRICE, IMAGE, BRAND, COUNT-IN-STOCK, CATEGORY and DESCRIPTION)
+As an ADMIN, I would like to be able to access all users orders and have the ability to set paid orders to the "shipped" status so that users can check to see when their product has been shipped for delivery

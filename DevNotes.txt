@@ -1,0 +1,36 @@
+Useful Front-End Dependencies
+* axios - For fetch requests
+* react-bootstrap - css framework
+* react-helmet - custom meta tags, titles and keywords for SEO
+* react-paypal-button-v2 - button to place an order via paypal in conjunction with the paypal API
+* react-redux - used to combine Redux global state manager with React and gain access to useful tools
+* react-router-dom - used to setup routing in React
+* react-router-bootstrap - used to setup routing for react-bootstrap components 
+* redux - Popular global state manager
+* redux-devtools-extension - allows you to use redux devtools in development 
+* redux-thunk - middleware for Redux that allows you to create action-creators that returns a function instead of an action. Can be used to delay the dispatch of an action or only dispatch if a condition is met
+
+* "proxy": "http://127.0.0.1:5000"
+
+Useful Back-End Dependencies
+* bcryptjs - typically used in conjunction with JWT to encrypt a users password upon registration/login
+* dotenv - allows you to create a .env file to store sensitive information or environment variables
+* express - a NodeJS framework that enables you to create REST API's in the backend with ease
+* express-async-handler - handles the try/catch syntax when creating REST API's, which improves code efficency and readability 
+* jsonwebtoken - also known as JWT, is an npm package that allows you to create auth tokens to verify and authenticate registered/logged in users
+* mongoose - an object document model or ODM that makes it a lot easier to create Schema models and setup the MongoDB database in the backend
+* morgan - used to log request/response codes in the terminal
+* multer - used to upload image files 
+    DevDependencies - 
+    * nodemon - real-time error handling upon file save (this means you don't have to restart your node server every time you save a file)
+    * concurrently - used to combine multiple scripts into one script 
+
+"scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
