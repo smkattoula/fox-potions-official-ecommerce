@@ -3,6 +3,6 @@ SYSTEM REQUIREMENT SPECIFICATIONS
 **Back-End/Server**
 
 June 18, 2021
-- Setup a NodeJS server and install dependencies
-- Setup a MongoDB database, connect DB to the server, and create document models that will store our data using Mongoose (product model)
+- Setup a NodeJS server and install dependencies 
+- Setup a MongoDB database, connect DB to the server, and create document models that will store our data using Mongoose (product model) 
 - Setup routes and controllers to house REST API's that we will create with the Express framework (product API routes)
