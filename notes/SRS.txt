@@ -9,4 +9,8 @@ June 18th, 2021
 
 June 28th, 2021
 - Create MVC design architecture in the backend to include controllers with associated API routes
+- Create getAllProducts API route to fetch all products from the database
 - Create seeder script to seed database with fake data
+
+July 03th, 2021
+- Create getProduct API route to fetch a single product from the database

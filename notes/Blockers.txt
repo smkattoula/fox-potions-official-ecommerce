@@ -2,4 +2,4 @@
 
 * Error: Cannot find module '/Users/karmicuniverse/Desktop/fox-potions-official/server.js'. RESOLVED on 06/28/2021 due to not having nodemon script in root package.json file
 
-* The "path" argument must be of type string. Received function model
+* The "path" argument must be of type string. Received function model. RESOLVED on 07/03/2021 by changing seeder script to alternate code solution. 
