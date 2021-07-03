@@ -14,3 +14,8 @@ June 28th, 2021
 
 July 03th, 2021
 - Create getProduct API route to fetch a single product from the database
+
+**Front-End/Client**
+
+July 03th, 2021
+- Create React App in frontend folder, remove frontend git repo, clean up file structure, install front-end dependencies
