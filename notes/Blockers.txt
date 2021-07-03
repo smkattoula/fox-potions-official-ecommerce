@@ -1,0 +1,5 @@
+* The `uri` parameter to `openUri()` must be a string, got "undefined". RESOLVED on 06/28/2021 due to syntax error
+
+* Error: Cannot find module '/Users/karmicuniverse/Desktop/fox-potions-official/server.js'. RESOLVED on 06/28/2021 due to not having nodemon script in root package.json file
+
+* The "path" argument must be of type string. Received function model

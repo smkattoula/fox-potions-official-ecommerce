@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Black Shirt",
+    "price": 10,
+    "image": "/images/blackshirt",
+    "brand": "Buck Nelson",
+    "countInStock": 3,
+    "category": "Clothing",
+    "description": "100% cotton black t-shirt"
+  },
+  {
+    "name": "Green Shirt",
+    "price": 10,
+    "image": "/images/greenshirt",
+    "brand": "Buck Nelson",
+    "countInStock": 5,
+    "category": "Clothing",
+    "description": "100% cotton green t-shirt"
+  },
+  {
+    "name": "Blue Shirt",
+    "price": 10,
+    "image": "/images/blueshirt",
+    "brand": "Buck Nelson",
+    "countInStock": 2,
+    "category": "Clothing",
+    "description": "100% cotton blue t-shirt"
+  },
+  {
+    "name": "Purple Shirt",
+    "price": 10,
+    "image": "/images/purpleshirt",
+    "brand": "Buck Nelson",
+    "countInStock": 4,
+    "category": "Clothing",
+    "description": "100% cotton purple t-shirt"
+  },
+  {
+    "name": "Grey Shirt",
+    "price": 10,
+    "image": "/images/greyshirt",
+    "brand": "Buck Nelson",
+    "countInStock": 0,
+    "category": "Clothing",
+    "description": "100% cotton grey t-shirt"
+  }
+]
