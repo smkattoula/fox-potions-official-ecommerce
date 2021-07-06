@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Navbar,
   Nav,
@@ -13,11 +14,9 @@ const Header = () => {
   return (
     <Navbar bg="primary" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="/">Fox Potions Official</Navbar.Brand>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
-        </Form>
+        <Link to="/">
+          <Navbar.Brand href="/">Fox Potions eCommerce</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
@@ -33,6 +32,14 @@ const Header = () => {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            <Form inline>
+              <FormControl
+                type="text"
+                placeholder="Search"
+                className="mr-sm-2"
+              />
+              <Button variant="outline-success">Search</Button>
+            </Form>
           </Nav>
         </Navbar.Collapse>
       </Container>
