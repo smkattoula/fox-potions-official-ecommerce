@@ -19,3 +19,8 @@ July 03th, 2021
 
 July 03th, 2021
 - Create React App in frontend folder, remove frontend git repo, clean up file structure, install front-end dependencies
+
+July 6th, 2021
+- Install npm package bootswatch to use a free bootstrap theme
+- Create Header component, create Footer component
+- Create HomeScreen component

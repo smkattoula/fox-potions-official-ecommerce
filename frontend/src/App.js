@@ -1,10 +1,13 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "bootswatch/dist/journal/bootstrap.min.css";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
