@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 import {
   Navbar,
   Nav,
@@ -14,13 +14,15 @@ const Header = () => {
   return (
     <Navbar bg="primary" variant="dark" expand="lg">
       <Container>
-        <Link to="/">
-          <Navbar.Brand href="/">Fox Potions eCommerce</Navbar.Brand>
-        </Link>
+        <LinkContainer to="/">
+          <Navbar.Brand>Fox Potions eCommerce</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="/cart">My Cart</Nav.Link>
+            <LinkContainer to="/cart">
+              <Nav.Link>My Cart</Nav.Link>
+            </LinkContainer>
             <NavDropdown title="Profile" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

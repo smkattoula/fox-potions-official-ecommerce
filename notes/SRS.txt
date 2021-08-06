@@ -24,3 +24,6 @@ July 6th, 2021
 - Install npm package bootswatch to use a free bootstrap theme
 - Create Header component, create Footer component
 - Create HomeScreen component
+
+August 1st, 2021
+- Create Product.js component to be mapped through in HomeScreen component

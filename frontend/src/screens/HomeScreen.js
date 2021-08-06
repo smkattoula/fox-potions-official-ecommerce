@@ -1,40 +1,36 @@
-import React from "react";
-import blackshirt from "../images/blackshirt.jpeg";
-import { Card, Button, Container, Col, Row } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Product from "../components/Product";
+import { Container, Col, Row } from "react-bootstrap";
 
 const HomeScreen = () => {
+  const [products, setProducts] = useState([]);
+
+  const getProducts = async () => {
+    try {
+      const response = await axios.get("/api/products");
+
+      const data = await response.data;
+
+      setProducts(data);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+
+  console.log(products);
+
   return (
     <Container className="mb-5" fluid>
       <Row className="d-flex justify-content-center">
-        <Col md={3}>
-          <Card className="mt-5" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={blackshirt} />
-            <Card.Body>
-              <Card.Title>Shirt</Card.Title>
-              <Card.Text>Cool shirt description</Card.Text>
-              <Button variant="primary">More Details</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={3}>
-          <Card className="mt-5" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={blackshirt} />
-            <Card.Body>
-              <Card.Title>Shirt</Card.Title>
-              <Card.Text>Cool shirt description</Card.Text>
-              <Button variant="primary">More Details</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={2}>
-          <Card className="mt-5" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={blackshirt} />
-            <Card.Body>
-              <Card.Title>Shirt</Card.Title>
-              <Card.Text>Cool shirt description</Card.Text>
-              <Button variant="primary">More Details</Button>
-            </Card.Body>
-          </Card>
+        <Col sm={12} md={6} lg={4} xl={3}>
+          {products.map((product) => {
+            return <Product key={product._id} product={product} />;
+          })}
         </Col>
       </Row>
     </Container>
