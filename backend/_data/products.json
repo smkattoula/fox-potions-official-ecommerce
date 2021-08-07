@@ -2,7 +2,7 @@
   {
     "name": "Black Shirt",
     "price": 10,
-    "image": "/images/blackshirt",
+    "image": "/images/blackshirt.jpeg",
     "brand": "Buck Nelson",
     "countInStock": 3,
     "category": "Clothing",
@@ -11,7 +11,7 @@
   {
     "name": "Green Shirt",
     "price": 10,
-    "image": "/images/greenshirt",
+    "image": "/images/greenshirt.jpeg",
     "brand": "Buck Nelson",
     "countInStock": 5,
     "category": "Clothing",
@@ -20,7 +20,7 @@
   {
     "name": "Blue Shirt",
     "price": 10,
-    "image": "/images/blueshirt",
+    "image": "/images/blueshirt.jpeg",
     "brand": "Buck Nelson",
     "countInStock": 2,
     "category": "Clothing",
@@ -29,7 +29,7 @@
   {
     "name": "Purple Shirt",
     "price": 10,
-    "image": "/images/purpleshirt",
+    "image": "/images/purpleshirt.jpeg",
     "brand": "Buck Nelson",
     "countInStock": 4,
     "category": "Clothing",
@@ -38,7 +38,7 @@
   {
     "name": "Grey Shirt",
     "price": 10,
-    "image": "/images/greyshirt",
+    "image": "/images/greyshirt.jpeg",
     "brand": "Buck Nelson",
     "countInStock": 0,
     "category": "Clothing",

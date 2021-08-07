@@ -18,6 +18,9 @@ app.use(cors());
 // Body-Parser
 app.use(express.json());
 
+// Serve static image folder
+app.use(express.static("public"));
+
 app.use("/api/products", require("./routes/productRoutes"));
 
 app.get("/", (req, res) => {

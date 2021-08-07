@@ -27,3 +27,6 @@ July 6th, 2021
 
 August 1st, 2021
 - Create Product.js component to be mapped through in HomeScreen component
+
+August 6th, 2021
+- Configure server.js to serve static images folder to be fetched in the HomeScreen component 
