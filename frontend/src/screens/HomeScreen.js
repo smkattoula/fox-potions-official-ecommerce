@@ -25,13 +25,22 @@ const HomeScreen = () => {
   console.log(products);
 
   return (
-    <Container className="mb-5" fluid>
-      <Row className="d-flex justify-content-center">
-        <Col sm={12} md={6} lg={4} xl={3}>
-          {products.map((product) => {
-            return <Product key={product._id} product={product} />;
-          })}
-        </Col>
+    <Container className="mb-5">
+      <Row>
+        {products.map((product) => {
+          return (
+            <Col
+              xs={12}
+              sm={6}
+              lg={4}
+              xl={4}
+              key={product._id}
+              className="d-flex justify-content-center mb-5"
+            >
+              <Product key={product._id} product={product} />
+            </Col>
+          );
+        })}
       </Row>
     </Container>
   );

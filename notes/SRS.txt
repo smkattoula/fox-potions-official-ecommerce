@@ -30,3 +30,4 @@ August 1st, 2021
 
 August 6th, 2021
 - Configure server.js to serve static images folder to be fetched in the HomeScreen component 
+- Fetch T-shirt products from getProducts route in the backend and display in HomeScreen component with responsiveness
