@@ -4,6 +4,7 @@
     "price": 10,
     "image": "/images/blackshirt.jpeg",
     "brand": "Buck Nelson",
+    "rating": 4.5,
     "countInStock": 3,
     "category": "Clothing",
     "description": "100% cotton black t-shirt"
@@ -13,6 +14,7 @@
     "price": 10,
     "image": "/images/greenshirt.jpeg",
     "brand": "Buck Nelson",
+    "rating": 3.5,
     "countInStock": 5,
     "category": "Clothing",
     "description": "100% cotton green t-shirt"
@@ -22,6 +24,7 @@
     "price": 10,
     "image": "/images/blueshirt.jpeg",
     "brand": "Buck Nelson",
+    "rating": 2,
     "countInStock": 2,
     "category": "Clothing",
     "description": "100% cotton blue t-shirt"
@@ -31,6 +34,7 @@
     "price": 10,
     "image": "/images/purpleshirt.jpeg",
     "brand": "Buck Nelson",
+    "rating": 5,
     "countInStock": 4,
     "category": "Clothing",
     "description": "100% cotton purple t-shirt"
@@ -40,6 +44,7 @@
     "price": 10,
     "image": "/images/greyshirt.jpeg",
     "brand": "Buck Nelson",
+    "rating": 0,
     "countInStock": 0,
     "category": "Clothing",
     "description": "100% cotton grey t-shirt"

@@ -5,3 +5,5 @@
 * The "path" argument must be of type string. Received function model. RESOLVED on 07/03/2021 by changing seeder script to alternate code solution. 
 
 * Unable to fetch images for t-shirt products from the database. RESOLVED on 08/06/2021 by configuring server.js to serve static folders in the public folder
+
+* Attempted to build a custom star rating component but later decided to go with an alternative solution to save time. Installed an NPM package: react-star-ratings which comes with a customizable star rating component and works great!
