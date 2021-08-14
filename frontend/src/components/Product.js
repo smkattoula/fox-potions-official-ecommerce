@@ -1,17 +1,24 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Container } from "react-bootstrap";
 
-const Product = ({ product, setProduct }) => {
+const Product = ({ product }) => {
   return (
-    <Card className="mt-5" style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={product.image} className="h-100" />
+    <Card className="card-content mt-5" style={{ width: "18rem" }}>
+      <Container className="h-50">
+        <Card.Img variant="top" src={product.image} />
+      </Container>
       <Card.Body>
-        <Card.Title>{product.name}</Card.Title>
-        <Card.Text>{product.description}</Card.Text>
-        <Card.Text>Price: ${product.price}</Card.Text>
-        <p>Reviews</p>
-        <Card.Text>
+        <Card.Title className="card-title card-item-center mt-3">
+          {product.name}
+        </Card.Title>
+        <Card.Text className="card-description card-item-center mt-4">
+          {product.description}
+        </Card.Text>
+        <Card.Text className="card-price card-item-center">
+          ${product.price}
+        </Card.Text>
+        <Card.Text className="card-item-center">
           <StarRatings
             rating={product.rating}
             name="rating"
@@ -21,7 +28,9 @@ const Product = ({ product, setProduct }) => {
             starSpacing="5px"
           />{" "}
         </Card.Text>
-        <Button variant="primary">More Details</Button>
+        <Button className="btn btn-block" variant="primary">
+          More Details
+        </Button>
       </Card.Body>
     </Card>
   );
