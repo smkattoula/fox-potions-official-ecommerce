@@ -1,5 +1,6 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
+import { Link } from "react-router-dom";
 import { Card, Button, Container } from "react-bootstrap";
 
 const Product = ({ product }) => {
@@ -28,9 +29,11 @@ const Product = ({ product }) => {
             starSpacing="5px"
           />{" "}
         </Card.Text>
-        <Button className="btn btn-block" variant="primary">
-          More Details
-        </Button>
+        <Link to={`/productdetails/${product._id}`}>
+          <Button className="btn btn-block" variant="primary">
+            More Details
+          </Button>
+        </Link>
       </Card.Body>
     </Card>
   );

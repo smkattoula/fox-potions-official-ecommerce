@@ -34,3 +34,6 @@ August 6th, 2021
 
 August 12th, 2021
 - Add star rating component to the Product component to display each products overall rating (1 - 5)
+
+August 14th, 2021
+- Clean up and style Product cards with CSS
