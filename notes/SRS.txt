@@ -37,3 +37,6 @@ August 12th, 2021
 
 August 14th, 2021
 - Clean up and style Product cards with CSS
+
+August 15th, 2021
+- Create ProductDetails screen and fetch product by ID to display in the UI
