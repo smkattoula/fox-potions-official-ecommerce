@@ -40,3 +40,6 @@ August 14th, 2021
 
 August 15th, 2021
 - Create ProductDetails screen and fetch product by ID to display in the UI
+
+September 16th 2021
+- Refactor frontend code and redo HomeScreen cards to look cleaner and be more responsive, clean up Header and Footer, redo bootswatch styling for the web app

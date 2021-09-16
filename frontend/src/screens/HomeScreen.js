@@ -11,14 +11,14 @@ const HomeScreen = () => {
         {products.map((product) => {
           return (
             <Col
+              key={product._id}
+              className="card-stretch"
               sm={12}
               md={6}
               lg={4}
               xl={3}
-              key={product._id}
-              className="card-stretch"
             >
-              <Product key={product._id} product={product} />
+              <Product product={product} />
             </Col>
           );
         })}
