@@ -3,10 +3,25 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { Card, Button, Row, Col, Image, ListGroup } from "react-bootstrap";
 import Rating from "../components/Rating";
-import products from "../products";
 
 const ProductScreen = ({ match }) => {
-  const product = products.find((p) => p._id === match.params.id);
+  const [product, setProduct] = useState({});
+
+  const fetchProduct = async () => {
+    try {
+      const response = await axios.get(`/api/products/${match.params.id}`);
+
+      const data = response.data;
+      setProduct(data);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchProduct();
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <>

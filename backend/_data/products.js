@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Stop Talking",
     image: "/images/stoptalking.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "Ego Death",
     image: "/images/egodeath.jpg",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Pineapple Head",
     image: "/images/pineapple.jpg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Matrix",
     image: "/images/matrix.jpg",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Space Dust",
     image: "/images/spacedust.jpg",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "No Planet B",
     image: "/images/noplanetb.jpg",
     description:
@@ -79,4 +73,4 @@ const products = [
   },
 ];
 
-export default products;
+module.exports = products;

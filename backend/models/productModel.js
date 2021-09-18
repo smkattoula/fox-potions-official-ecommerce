@@ -21,6 +21,10 @@ const ProductSchema = new Schema({
   rating: {
     type: Number,
   },
+  numReviews: {
+    type: Number,
+    required: true,
+  },
   countInStock: {
     type: Number,
     required: true,

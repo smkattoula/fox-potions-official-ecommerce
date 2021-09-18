@@ -1,4 +1,4 @@
-const fs = require("fs");
+const products = require("./_data/products");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const { connectDB } = require("./config/db");
@@ -10,10 +10,6 @@ require("dotenv").config();
 const Product = require("./models/productModel");
 
 connectDB();
-
-const products = JSON.parse(
-  fs.readFileSync(`${__dirname}/_data/products.json`, "utf-8")
-);
 
 const importData = async () => {
   try {
