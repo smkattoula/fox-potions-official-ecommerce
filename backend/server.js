@@ -17,9 +17,6 @@ app.use(cors());
 // Body-Parser
 app.use(express.json());
 
-// Serve static image folder
-app.use(express.static("public"));
-
 app.use("/api/products", require("./routes/productRoutes"));
 
 app.get("/", (req, res) => {
@@ -28,4 +25,6 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
+app.listen(PORT, () =>
+  console.log(`Server started in ${process.env.NODE_ENV} mode on port: ${PORT}`)
+);
